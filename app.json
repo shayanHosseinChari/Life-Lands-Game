@@ -1,0 +1,83 @@
+{
+  "expo": {
+    "androidStatusBar": {
+      "backgroundColor": "#000"
+    },
+    "name": "LifeLands",
+    "slug": "lifeissogoodforme",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/iconapp.png",
+    "userInterfaceStyle": "light",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow $(PRODUCT_NAME) to access your photos",
+        "NSPhotoLibraryAddUsageDescription": "Allow $(PRODUCT_NAME) to save photos"
+      }
+    },
+    "plugins": [
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "DEFAULT"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ],
+      "expo-font",
+      "expo-secure-store"
+    ],
+    "android": {
+      "softwareKeyboardLayoutMode": "pan",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/iconapp.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.mm.lifelands",
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_MEDIA_LOCATION",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "androidNavigationBar": {
+      "backgroundColor": "#000"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f1a7fa51-b469-47d4-ae00-8fa4794cf511"
+      }
+    },
+    "owner": "shayanandroid"
+  }
+}
