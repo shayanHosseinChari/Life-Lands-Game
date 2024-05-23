@@ -190,7 +190,7 @@ const GalleryPage = () => {
     }).then(res=>{
       setIsLoading(false)
 
-      setLastVideo(res.data.data)
+      setLastVideo(res.data.data.reverse())
     })
     setIsLoading(false)
 
@@ -209,7 +209,7 @@ const GalleryPage = () => {
       console.log(res.data)
     setIsLoading(false)
       
-      setLastVideo(res.data.data)
+      setLastVideo(res.data.data.reverse())
     })
     setIsLoading(false)
 
@@ -529,7 +529,7 @@ const GalleryPage = () => {
                            <Image source={{
                             uri: `${LOAD_FILE}${item.like[1].userId.profileImage}`
                           }} style={{width:30,height:30,borderRadius: 100,marginRight:-12,borderColor:"black",borderWidth: 3}}/>
-                           <ImageBackground source={{
+                           <Image source={{
                             uri: `${LOAD_FILE}${item.like[2].userId.profileImage}`
                           }} style={{width:30,height:30,borderRadius: 100,marginRight:-12,borderColor:"black",borderWidth: 3}}/>
 
@@ -648,7 +648,7 @@ const GalleryPage = () => {
       ) : (
         <FlatList
           // onEndReached={addContents}
-          data={lastVideo.reverse()}
+          data={lastVideo}
           scrollEnabled
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{ alignSelf: "stretch" }}

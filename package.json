@@ -15,8 +15,8 @@
     "@aitfakirali/react-native-marquee": "^0.0.5",
     "@animatereactnative/marquee": "^0.2.0",
     "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
-    "@expo/config": "~9.0.0",
-    "@expo/metro-config": "~0.18.1",
+    "@expo/config": "^8.1.1",
+    "@expo/metro-config": "^0.10.0",
     "@expo/ngrok": "^4.1.0",
     "@gorhom/bottom-sheet": "^4.6.1",
     "@pstyczynski/react-native-expo-pdfjs": "^1.0.0",
@@ -35,7 +35,7 @@
     "create-react-class": "^15.7.0",
     "debounce": "^2.0.0",
     "deep-assign": "^3.0.0",
-    "expo": ">=51.0.0-0 <52.0.0",
+    "expo": ">=47.0.0",
     "expo-asset": "~10.0.6",
     "expo-av": "~14.0.5",
     "expo-camera": "~15.0.9",
@@ -53,7 +53,6 @@
     "expo-linear-gradient": "~13.0.2",
     "expo-linking": "~6.3.1",
     "expo-media-library": "~16.0.3",
-    "expo-modules-core": "^1.12.11",
     "expo-navigation-bar": "~3.0.4",
     "expo-permissions": "^13.2.0",
     "expo-screen-orientation": "~7.0.5",
@@ -113,7 +112,8 @@
     "socket.io-client": "^4.6.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.0", "expo": "^47.0.0"
+    "@babel/core": "^7.24.0",
+    "expo": "^49.0.23"
   },
   "peerDependencies": {
     "expo": ">=47.0.0"
